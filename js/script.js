@@ -10,5 +10,16 @@ $(document).ready(function() {
         var q3Result = $("#question3").val();
         var totalScore;
     });
-
+   
+    
 });
+ function question1(answer){
+        if (user==="fire")
+        return NUMBER
+    }else if (answer==="water"){
+        return DIFFERENT NUMBER
+    }
+    
+    $(button).click(function()){
+        
+    });
