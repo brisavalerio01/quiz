@@ -13,13 +13,52 @@ $(document).ready(function() {
    
     
 });
+
  function question1(answer){
-        if (user==="fire")
-        return NUMBER
+        if (answer==="fire"){
+        return  4;
     }else if (answer==="water"){
-        return DIFFERENT NUMBER
+        return 3;
+    }else if(answer==="earth"){
+        return 2;
+    }else if (answer==="air"){
+        return 1;
     }
-    
-    $(button).click(function()){
-        
-    });
+  }
+  
+  function question2(answer){
+      if (answer ==="your love"){
+          return 4;
+      }else if (answer==="your money"){
+          return 3;
+      }else if(answer==="your snacks"){
+          return 2;
+      }else if(answer==="your phone"){
+          return 1;
+      }
+  }
+  
+  function question3(answer){
+      if(answer===""){
+          return 4;
+      }else if(answer===""){
+          return 3;
+      }else if(answer===""){
+          return 2;
+      }else if(answer===""){
+          return 1;
+      }
+  }
+  
+  function question4(answer){
+      if(answer===""){
+          return 4;
+      }else if(answer===""){
+          return 3;
+      }else if(answer===""){
+          return 2;
+      }else if(answer===""){
+          return 1;
+      }
+  }
+  
