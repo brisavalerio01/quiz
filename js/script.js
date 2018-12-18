@@ -8,7 +8,14 @@ $(document).ready(function() {
         var q1Result = $("#question1").val();
         var q2Result = $("#question2").val();
         var q3Result = $("#question3").val();
-        var totalScore;
+        var q4Result = $("#question4").val();
+        var totalScore=(quest1score+quest2score+quest3score+quest4score);
+        
+        var quest1score= question1(q1Result);
+        var quest2score= question2(q2Result);
+        var quest3score= question3(q3Result);
+        var quest4score= question4(q4Result);
+        $(".result").html(totalScore);
     });
    
     
@@ -27,37 +34,37 @@ $(document).ready(function() {
   }
   
   function question2(answer){
-      if (answer ==="your love"){
+      if (answer ==="love"){
           return 4;
-      }else if (answer==="your money"){
+      }else if (answer==="money"){
           return 3;
-      }else if(answer==="your snacks"){
+      }else if(answer==="snacks"){
           return 2;
-      }else if(answer==="your phone"){
+      }else if(answer==="phone"){
           return 1;
       }
   }
   
   function question3(answer){
-      if(answer===""){
+      if(answer==="Bahamas"){
           return 4;
-      }else if(answer===""){
+      }else if(answer==="Japan"){
           return 3;
-      }else if(answer===""){
+      }else if(answer==="France"){
           return 2;
-      }else if(answer===""){
+      }else if(answer==="Other"){
           return 1;
       }
   }
   
   function question4(answer){
-      if(answer===""){
+      if(answer==="Gun"){
           return 4;
-      }else if(answer===""){
+      }else if(answer==="Sword"){
           return 3;
-      }else if(answer===""){
+      }else if(answer==="Bombs"){
           return 2;
-      }else if(answer===""){
+      }else if(answer==="Poision"){
           return 1;
       }
   }
